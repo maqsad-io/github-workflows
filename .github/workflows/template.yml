@@ -62,7 +62,7 @@ jobs:
       #Set account arn
       - name: Account Role
         shell: bash
-        run: echo "##[set-output name=arn;]$(echo arn:aws:iam::$ACCOUNT_ROLE:role/$AWS_ROLE)"
+        run: echo "##[set-output name=arn;]$(echo arn:aws:iam::$ACCOUNT_ROLE:role/${{secrets.AWS_ROLE}})"
         id: account_role_arn
 
       #Assume role for arn
