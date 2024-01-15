@@ -37,6 +37,8 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          submodules: 'true'
 
       #Get account id for account
       - name: Get Account ID
