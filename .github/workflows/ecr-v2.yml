@@ -22,6 +22,8 @@ on:
         required: true
       AWS_ROLE:
         required: true
+      TOKEN:
+        required: true
 jobs:
   image-deploy:
     runs-on: ubuntu-latest
