@@ -22,8 +22,6 @@ on:
         required: true
       AWS_ROLE:
         required: true
-      TOKEN:
-        required: false
       SENTRY_AUTH_TOKEN:
           required: false
 jobs:
@@ -41,9 +39,6 @@ jobs:
 
       - name: Checkout Repository
         uses: actions/checkout@v2
-        with:
-          submodules: 'true'
-          token: ${{ secrets.TOKEN }}
       #Get account id for account
       - name: Get Account ID
         shell: bash
