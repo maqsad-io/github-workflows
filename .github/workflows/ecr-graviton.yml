@@ -26,7 +26,7 @@ on:
           required: false
 jobs:
   image-deploy:
-    runs-on: ubuntu-24.04-arm
+    runs-on: macos-latest-xlarge
     #     if: github.event.pull_request.merged == 'true'
     steps:
 
